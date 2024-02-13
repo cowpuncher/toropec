@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Angst Bold Serif';
+    src: url('Angst-BoldSerif.eot');
+    src: url('Angst-BoldSerif.eot?#iefix') format('embedded-opentype'),
+        url('Angst-BoldSerif.woff2') format('woff2'),
+        url('Angst-BoldSerif.woff') format('woff'),
+        url('Angst-BoldSerif.ttf') format('truetype'),
+        url('Angst-BoldSerif.svg#Angst-BoldSerif') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst';
+    src: url('Angst-Bold.eot');
+    src: url('Angst-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Angst-Bold.woff2') format('woff2'),
+        url('Angst-Bold.woff') format('woff'),
+        url('Angst-Bold.ttf') format('truetype'),
+        url('Angst-Bold.svg#Angst-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst Normal Serif';
+    src: url('Angst-NormalSerif.eot');
+    src: url('Angst-NormalSerif.eot?#iefix') format('embedded-opentype'),
+        url('Angst-NormalSerif.woff2') format('woff2'),
+        url('Angst-NormalSerif.woff') format('woff'),
+        url('Angst-NormalSerif.ttf') format('truetype'),
+        url('Angst-NormalSerif.svg#Angst-NormalSerif') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst Normal';
+    src: url('Angst-Normal.eot');
+    src: url('Angst-Normal.eot?#iefix') format('embedded-opentype'),
+        url('Angst-Normal.woff2') format('woff2'),
+        url('Angst-Normal.woff') format('woff'),
+        url('Angst-Normal.ttf') format('truetype'),
+        url('Angst-Normal.svg#Angst-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst';
+    src: url('Angst-Regular.eot');
+    src: url('Angst-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Angst-Regular.woff2') format('woff2'),
+        url('Angst-Regular.woff') format('woff'),
+        url('Angst-Regular.ttf') format('truetype'),
+        url('Angst-Regular.svg#Angst-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst';
+    src: url('Angst-Thin.eot');
+    src: url('Angst-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Angst-Thin.woff2') format('woff2'),
+        url('Angst-Thin.woff') format('woff'),
+        url('Angst-Thin.ttf') format('truetype'),
+        url('Angst-Thin.svg#Angst-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angst Thin Serif';
+    src: url('Angst-ThinSerif.eot');
+    src: url('Angst-ThinSerif.eot?#iefix') format('embedded-opentype'),
+        url('Angst-ThinSerif.woff2') format('woff2'),
+        url('Angst-ThinSerif.woff') format('woff'),
+        url('Angst-ThinSerif.ttf') format('truetype'),
+        url('Angst-ThinSerif.svg#Angst-ThinSerif') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

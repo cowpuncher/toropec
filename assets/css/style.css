@@ -1,0 +1,201 @@
+:root {
+    --color-1: #F5F4F2;
+    --color-2 :#1B2934;
+    --color-3: #F05A39;
+
+    --br-0: 16px;
+    --br-1: 12px;
+    --br-2: 8px;
+    --br-3: 32px;
+
+}
+/* Спецификация */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 18px;
+    background: var(--color-1);
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2)
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Angst Normal';
+} 
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-2);
+    line-height: 40px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--color-1);
+    border-radius: var(--br-2);
+    padding: 9px 20px;
+    gap: 40px;
+}
+
+.orange {
+    background: var(--color-3);
+}
+
+/* HEADER */
+.header {
+    position: relative;
+}
+/* TopPanel */
+.topPanelPos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+}
+.topPanel {
+    background: var(--color-1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--br-0);
+    padding: 8px 30px 8px 20px;
+}
+.burger {
+    cursor: pointer;
+}
+.burger span {
+    display: block;
+    background: var(--color-2);
+    width: 24px;
+    height: 2px;
+}
+.burger span:not(:last-child) {
+    margin-bottom: 4px;
+}
+.topPanel .logo {
+    margin: 0 auto 0 90px;
+}
+nav.menu {
+    margin-right: 50px;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+.menu ul li:not(:last-child) {
+    margin-right: 28px;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu a svg {
+    margin-right: 8px;
+}
+.menu a svg.dropdown {
+    margin-left: 8px;
+}
+/* MainBanner */
+.mainBanner {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.mainBanner .swiper {
+    height: 100vh;
+    border-radius: 0 0 var(--br-3) var(--br-3);
+
+}
+.mainBanner .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainBanner .wrapperBlock {
+    position: absolute;
+    z-index: 9;
+    top: 34%;
+    max-width: 1050px;
+    margin: 0;
+    left: 14.5vw;
+    right: 0;
+    color: #fff;
+}
+.mainBanner  .title {
+    font-family: 'Angst Normal';
+    font-size: 118px;
+    line-height: 118px;
+    margin-bottom: 15px;
+}
+.mainBanner .link {
+    padding: 12px 20px;
+    margin-top: 68px;
+}
+.mainBanner .desc {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'HelveticaNeueCyr';
+    line-height: 40px;
+}
+/* HISTORY SECTION */
+.historySection {
+    padding: 95px 15px;
+}
+.history {
+    display: flex;
+    gap: 20px;
+}
+.historySection .sectionTitle {
+    margin-bottom: 35px;
+}
+.history .swiper {
+    width: 75%;
+}
+.history .swiper-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.history .swiper-wrapper .swiper-slide {
+    width: 32%;
+    border-radius: var(--br-0);
+    overflow: hidden;
+}
+.historyBlock {
+    background: #fff;
+    width: 25%;
+    border-radius: var(--br-0);
+    overflow: hidden;
+}
