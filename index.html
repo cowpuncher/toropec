@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    
 </head>
-<body>
+<body> 
 
     <svg style="display: none;">
         <symbol id="menu-1" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,9 +46,9 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 12.125 18.2635 14.078 17.0319 15.6177L23.4142 22L22 23.4142L15.6177 17.0319C14.078 18.2635 12.125 19 10 19C5.02944 19 1 14.9706 1 10ZM10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3Z" fill="#5C7A88"/>
         </symbol>   
         
-        <svg id="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 4.58569L20.4142 11.9999L13 19.4141L11.5858 17.9999L16.5858 12.9999H4V10.9999H16.5858L11.5858 5.99991L13 4.58569Z" fill="#F5F4F2"/>
-        </svg>
+        </symbol>
             
     </svg>
 
@@ -57,7 +59,7 @@
                     <div class="burger">
                         <span></span><span></span><span></span>
                     </div>
-                    <a href="/" class="logo"><img src="./assets/img/logo.png" alt="logo"></a>
+                    <a href="/" class="logo"><img src="./assets/img/logo.jpg" alt="logo"></a>
                     <nav class="menu">
                         <ul>
                             <li>
@@ -170,15 +172,19 @@
                     </div>
                 </div>
             </div>
+            <div id="map" class="map" style="width: 100%; height: 400px"></div>
+        
         </header>
         <main class="main">
             <section class="historySection">
                 <h2 class="sectionTitle">950 историй города</h2>
                 <div class="history">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide img">
+                    <div class="historyWrap">
+                        <div class="historyBlock img">
+                            <div class="image">
                                 <img src="./assets/img/news-1.jpeg" alt="banner">
+                            </div>
+                            <div class="historyBlockWrap">
                                 <div class="title">
                                     Побывать в музее-фотостудии
                                 </div>
@@ -189,8 +195,12 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="swiper-slide img">
+                        </div>
+                        <div class="historyBlock img">
+                            <div class="image">
                                 <img src="./assets/img/news-2.jpeg" alt="banner">
+                            </div>
+                            <div class="historyBlockWrap">
                                 <div class="title">
                                     Узнать, почему кокошники называли "жемчужные шишаки"
                                 </div>
@@ -201,8 +211,12 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="swiper-slide img">
+                        </div>
+                        <div class="historyBlock img">
+                            <div class="image">
                                 <img src="./assets/img/news-3.jpeg" alt="banner">
+                            </div>
+                            <div class="historyBlockWrap">
                                 <div class="title">
                                     Открыть для себя стиль "Торопецкого барокко"
                                 </div>
@@ -214,24 +228,252 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="historyBlock">
-                        <div class="title">
-                            Побывать в музее-фотостудии
+                        <div class="historyBlock slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/slide-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/slide-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/slide-3.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/slide-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title">
+                                УЗНАТЬ БОЛЬШЕ НЕОБЫЧНЫХ ИСТОРИЙ
+                            </div>
+                            <a href="#" class="link">
+                                Смотреть все
+                                <svg width="24" height="24" >
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </a>
                         </div>
-                        <a href="#" class="link">
-                            Подробнее
-                            <svg width="24" height="24" >
-                                <use xlink:href="#arrow"></use>
-                            </svg>
+                    </div>
+                </div>
+            </section> 
+            <section class="bannerSection banner_big">
+                <div class="bannerTitle">
+                    Торопец – настоящий город-легенда, который старше Москвы и Твери. 
+                </div>
+                <a href="#" class="link orange">
+                    Подробнее
+                    <svg width="24" height="24" >
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+            </section>             
+            <section class="evetsSection">
+                <div class="sectionTop">
+                    <h2 class="sectionTitle">Ближайшие события</h2>
+                    <div class="customSelect">
+                        <select>
+                            <option value="Январь">Январь</option>
+                            <option value="Февраль">Февраль</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="evets">
+                    <div class="eventsWrap">
+                        <div class="eventsCard">
+                            <div class="image img"><img src="./assets/img/event-1.jpg" alt=""></div>
+                            <span class="dates">04 Дек - 28 Янв</span>
+                            <div class="title">Конный поход Александра Невского</div>
+                            <a href="#" class="link">Подробнее</a>
+                        </div>
+                        <div class="eventsCard">
+                            <div class="image img"><img src="./assets/img/event-2.jpg" alt=""></div>
+                            <span class="dates">04 Дек - 28 Янв</span>
+                            <div class="title">Экологический фестиваль «Заповедник времен»</div>
+                            <a href="#" class="link">Подробнее</a>
+                        </div>
+                        <div class="eventsCard">
+                            <div class="image img"><img src="./assets/img/event-3.jpg" alt=""></div>
+                            <span class="dates">04 Дек - 28 Янв</span>
+                            <div class="title">Туристический заплыв на сап-бордах</div>
+                            <a href="#" class="link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="link more">
+                    Смотреть все
+                    <svg width="24" height="24" >
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+            </section>
+            <section class="promoSection">
+                <div class="bannerTitle">
+                    ТОРОПЕЦ 950 ЛЕТ
+                </div>
+                <div class="descSection">
+                    Послушайте, как звучит Торопец
+                </div>
+                <a href="#" class="link orange">
+                    Открыть аудиогид
+                    <svg width="24" height="24" >
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </a>
+            </section>
+            <section class="roadmapSection">
+                <div class="roadmap">
+                    <div class="roadmapCard">
+                        <div class="about">
+                            <div class="title">Туристам</div>
+                            <div class="desc">
+                                <p>
+                                    Откройте для себя местные жемчужины — исторические здания, музеи и парки. Насладитесь видами города с его самых высоких точек.
+                                </p>
+                                <p>                                 
+                                    Приглашаем вас на незабываемое путешествие по Торопцу – городу, где история переплетается с современностью. 
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="image img">
+                            <img src="./assets/img/roadmap-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="roadmapCard">
+                        <div class="about">
+                            <div class="title">Гастрономическое погружение</div>
+                            <div class="desc">
+                                <p>
+                                    Попробуйте национальные блюда и угощения в наших ресторанах, где каждый прием пищи станет настоящим кулинарным открытием.
+                                </p>
+                            </div>  
+                            <a href="#" class="link more">Подробнее</a>                          
+                        </div>
+                        <div class="image img">
+                            <img src="./assets/img/roadmap-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="roadmapCard">
+                        <div class="about">
+                            <div class="title">Где остановиться</div>
+                            <div class="desc">
+                                <p>
+                                    Попробуйте национальные блюда и угощения в наших ресторанах, где каждый прием пищи станет настоящим кулинарным открытием.
+                                </p>
+                            </div>  
+                            <a href="#" class="link more">Подробнее</a>                          
+                        </div>
+                        <div class="image img">
+                            <img src="./assets/img/roadmap-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="road">
+                <div class="image pos-r">
+                    <img src="./assets/img/road.png" alt="">
+                    <div class="roadLinks">
+                        <a href="#">
+                            Как добраться из Москвы
+                        </a>
+                        <a href="#">
+                            Как добраться из Санкт-Петербурга
                         </a>
                     </div>
                 </div>
-            </section>  
+                <div class="image"><img src="./assets/img/tower.png" alt=""></div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footerTop">
+                <div class="logo">
+                    <img src="./assets/img/logo_footer.jpg" alt="">
+                </div>
+                <div class="desc">
+                    Один из древнейших городов России отмечает 950-летие
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#menu-1"></use>
+                                </svg>
+                                О Торопце
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#menu-2"></use>
+                                </svg>
+                                События
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#menu-3"></use>
+                                </svg>
+                                Туристам
+                                
+                                <svg class="dropdown" width="16" height="16" >
+                                    <use xlink:href="#dropdown"></use>
+                                </svg>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#menu-4"></use>
+                                </svg>
+                                Экскурсии и Туры
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="32" height="32">
+                                    <use xlink:href="#menu-5"></use>
+                                </svg>
+                                Аудиогиды
+                            </a>                            
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerBody">
+                <div class="banner"><img src="./assets/img/footer_banner.png" alt="footer_banner"></div>
+                <div class="footerBodyWrap">
+                    <div class="footerBodyWrap_block opacity">
+                        Россия, 172840, Тверская область, г. Торопец, ул. Октябрьская, д. 53
+                    </div>
+                    <div class="footerBodyWrap_block opacity">
+                        Контактный телефон городской информационной службы: 8 (800) 2-55-05
+                    </div>
+                    <div class="footerBodyWrap_block opacity">
+                        <a href="#">
+                            Политка конфиденциальности
+                        </a>
+                    </div>
+                    <div class="footerBodyWrap_block">
+                        <div class="social">
+                            <a href="#"><img src="./assets/img/soc-1.svg" alt=""></a>
+                            <a href="#"><img src="./assets/img/soc-2.svg" alt=""></a>
+                            <a href="#"><img src="./assets/img/soc-3.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footerBodyWrap_block opacity">
+                        Копирайт 2024
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=67def038-3dc4-4d95-b920-c6097d297d2e&lang=ru_RU"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
